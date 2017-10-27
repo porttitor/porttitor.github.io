@@ -2,26 +2,28 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background: #196a73;
-      background-image: url(https://i.imgur.com/KQR1y9K.gif);
+      background: #000;
+      /* background-image: url(https://i.imgur.com/KQR1y9K.gif); */
+      /* background-image: url(https://i.imgur.com/KQR1y9K.gif); */
       height: 100%
   }
   #level {
       width: 100%;
       height: 1px;
       position: absolute;
-      top: 50%
+      top: 50%;
+      opacity: 0.4;
   }
   #content {
       text-align: center;
-      margin-top: -327px
+      margin-top: -327px;
   }
   #gears {
       width: 478px;
       height: 655px;
       position: relative;
       display: inline-block;
-      vertical-align: middle
+      vertical-align: middle;
   }
   #gears-static {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat -363px -903px;
@@ -30,29 +32,29 @@ body {
       position: absolute;
       bottom: 5px;
       right: 0;
-      opacity: .4
+      opacity: .4;
   }
   #title {
       vertical-align: middle;
       color: #9eb7b5;
       width: 43%;
-      display: inline-block
+      display: inline-block;
   }
   #title h1 {
       font-family: PTSansNarrowBold, sans-serif;
       font-size: 3.6em;
-      text-shadow: rgba(0, 0, 0, .36)7px 7px 10px
+      text-shadow: rgba(0, 0, 0, .36)7px 7px 10px;
   }
   #title p {
       font-family: sans-serif;
       font-size: 1.2em;
       line-height: 148%;
-      text-shadow: rgba(0, 0, 0, .36)1px 1px 0
+      text-shadow: rgba(0, 0, 0, .36)1px 1px 0;
   }
   .shadow {
       -webkit-box-shadow: 4px 7px 25px 10px rgba(43, 36, 0, .36);
       -moz-box-shadow: 4px 7px 25px 10px rgba(43, 36, 0, .36);
-      box-shadow: 4px 7px 25px 10px rgba(43, 36, 0, .36)
+      box-shadow: 4px 7px 25px 10px rgba(43, 36, 0, .36);
   }
   #gear15 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -993px;
@@ -64,7 +66,7 @@ body {
       -webkit-animation: rotate-back 24000ms linear infinite;
       -moz-animation: rotate-back 24000ms linear infinite;
       -ms-animation: rotate-back 24000ms linear infinite;
-      animation: rotate-back 24000ms linear infinite
+      animation: rotate-back 24000ms linear infinite;
   }
   #shadow15 {
       width: 306px;
@@ -74,7 +76,7 @@ body {
       border-radius: 153px;
       position: absolute;
       left: 52px;
-      top: 186px
+      top: 186px;
   }
   #gear14 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -856px;
@@ -82,7 +84,7 @@ body {
       height: 87px;
       position: absolute;
       left: 162px;
-      top: 296px
+      top: 296px;
   }
   #shadow14 {
       width: 70px;
@@ -92,7 +94,7 @@ body {
       border-radius: 35px;
       position: absolute;
       left: 171px;
-      top: 304px
+      top: 304px;
   }
   #gear13 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -744px;
@@ -104,7 +106,7 @@ body {
       -webkit-animation: rotate 8000ms linear infinite;
       -moz-animation: rotate 8000ms linear infinite;
       -ms-animation: rotate 8000ms linear infinite;
-      animation: rotate 8000ms linear infinite
+      animation: rotate 8000ms linear infinite;
   }
   #shadow13 {
       width: 36px;
@@ -114,7 +116,7 @@ body {
       border-radius: 18px;
       position: absolute;
       left: 187px;
-      top: 322px
+      top: 322px;
   }
   #gear10 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -184px;
@@ -126,7 +128,7 @@ body {
       -webkit-animation: rotate-back 8000ms linear infinite;
       -moz-animation: rotate-back 8000ms linear infinite;
       -ms-animation: rotate-back 8000ms linear infinite;
-      animation: rotate-back 8000ms linear infinite
+      animation: rotate-back 8000ms linear infinite;
   }
   #shadow10 {
       width: 86px;
@@ -136,7 +138,7 @@ body {
       border-radius: 43px;
       position: absolute;
       left: 193px;
-      top: 18px
+      top: 18px;
   }
   #gear3 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -1493px;
@@ -148,7 +150,7 @@ body {
       -webkit-animation: rotate 10000ms linear infinite;
       -moz-animation: rotate 10000ms linear infinite;
       -ms-animation: rotate 10000ms linear infinite;
-      animation: rotate 10000ms linear infinite
+      animation: rotate 10000ms linear infinite;
   }
   #shadow3 {
       width: 60px;
@@ -158,7 +160,7 @@ body {
       border-radius: 30px;
       position: absolute;
       left: 206px;
-      top: 31px
+      top: 31px;
   }
   #gear9 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat -371px -280px;
@@ -170,7 +172,7 @@ body {
       -webkit-animation: rotate 12000ms linear infinite;
       -moz-animation: rotate 12000ms linear infinite;
       -ms-animation: rotate 12000ms linear infinite;
-      animation: rotate 12000ms linear infinite
+      animation: rotate 12000ms linear infinite;
   }
   #shadow9 {
       width: 200px;
@@ -180,7 +182,7 @@ body {
       border-radius: 100px;
       position: absolute;
       left: 214px;
-      top: 113px
+      top: 113px;
   }
   #gear7 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat -371px 0;
@@ -192,7 +194,7 @@ body {
       -webkit-animation: rotate-back 10000ms linear infinite;
       -moz-animation: rotate-back 10000ms linear infinite;
       -ms-animation: rotate-back 10000ms linear infinite;
-      animation: rotate-back 10000ms linear infinite
+      animation: rotate-back 10000ms linear infinite;
   }
   #shadow7 {
       width: 76px;
@@ -202,7 +204,7 @@ body {
       border-radius: 38px;
       position: absolute;
       left: 276px;
-      top: 175px
+      top: 175px;
   }
   #gear6 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -1931px;
@@ -214,7 +216,7 @@ body {
       -webkit-animation: rotate-back 10000ms linear infinite;
       -moz-animation: rotate-back 10000ms linear infinite;
       -ms-animation: rotate-back 10000ms linear infinite;
-      animation: rotate-back 10000ms linear infinite
+      animation: rotate-back 10000ms linear infinite;
   }
   #shadow6 {
       width: 98px;
@@ -224,7 +226,7 @@ body {
       border-radius: 49px;
       position: absolute;
       left: 323px;
-      bottom: 230px
+      bottom: 230px;
   }
   #gear4 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -1627px;
@@ -236,7 +238,7 @@ body {
       -webkit-animation: rotate-back 10000ms linear infinite;
       -moz-animation: rotate-back 10000ms linear infinite;
       -ms-animation: rotate-back 10000ms linear infinite;
-      animation: rotate-back 10000ms linear infinite
+      animation: rotate-back 10000ms linear infinite;
   }
   #gear12 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -530px;
@@ -248,7 +250,7 @@ body {
       -webkit-animation: rotate 8000ms linear infinite;
       -moz-animation: rotate 8000ms linear infinite;
       -ms-animation: rotate 8000ms linear infinite;
-      animation: rotate 8000ms linear infinite
+      animation: rotate 8000ms linear infinite;
   }
   #shadow12 {
       width: 124px;
@@ -258,7 +260,7 @@ body {
       border-radius: 62px;
       position: absolute;
       left: 225px;
-      bottom: 107px
+      bottom: 107px;
   }
   #gear11 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -356px;
@@ -270,7 +272,7 @@ body {
       -webkit-animation: rotate-back 10000ms linear infinite;
       -moz-animation: rotate-back 10000ms linear infinite;
       -ms-animation: rotate-back 10000ms linear infinite;
-      animation: rotate-back 10000ms linear infinite
+      animation: rotate-back 10000ms linear infinite;
   }
   #shadow11 {
       width: 88px;
@@ -280,7 +282,7 @@ body {
       border-radius: 44px;
       position: absolute;
       left: 247px;
-      bottom: 123px
+      bottom: 123px;
   }
   #gear8 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat -371px -158px;
@@ -292,7 +294,7 @@ body {
       -webkit-animation: rotate 6000ms linear infinite;
       -moz-animation: rotate 6000ms linear infinite;
       -ms-animation: rotate 6000ms linear infinite;
-      animation: rotate 6000ms linear infinite
+      animation: rotate 6000ms linear infinite;
   }
   #shadow8 {
       width: 42px;
@@ -302,7 +304,7 @@ body {
       border-radius: 21px;
       position: absolute;
       left: 269px;
-      bottom: 146px
+      bottom: 146px;
   }
   #gear1 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 0;
@@ -314,7 +316,7 @@ body {
       -webkit-animation: rotate-back 10000ms linear infinite;
       -moz-animation: rotate-back 10000ms linear infinite;
       -ms-animation: rotate-back 10000ms linear infinite;
-      animation: rotate-back 10000ms linear infinite
+      animation: rotate-back 10000ms linear infinite;
   }
   #shadow1 {
       width: 96px;
@@ -324,7 +326,7 @@ body {
       border-radius: 48px;
       position: absolute;
       left: 103px;
-      bottom: 130px
+      bottom: 130px;
   }
   #gear5 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -1746px;
@@ -336,7 +338,7 @@ body {
       -webkit-animation: rotate 10000ms linear infinite alternate;
       -moz-animation: rotate 10000ms linear infinite alternate;
       -ms-animation: rotate 10000ms linear infinite alternate;
-      animation: rotate 10000ms linear infinite alternate
+      animation: rotate 10000ms linear infinite alternate;
   }
   #shadow5 {
       width: 96px;
@@ -346,7 +348,7 @@ body {
       border-radius: 48px;
       position: absolute;
       left: 41px;
-      top: 127px
+      top: 127px;
   }
   #gear2 {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat 0 -1364px;
@@ -358,7 +360,7 @@ body {
       -webkit-animation: rotate-back 10000ms linear infinite alternate;
       -moz-animation: rotate-back 10000ms linear infinite alternate;
       -ms-animation: rotate-back 10000ms linear infinite alternate;
-      animation: rotate-back 10000ms linear infinite alternate
+      animation: rotate-back 10000ms linear infinite alternate;
   }
   #weight {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat -371px -564px;
@@ -370,7 +372,7 @@ body {
       -webkit-animation: up 10000ms linear infinite alternate;
       -moz-animation: up 10000ms linear infinite alternate;
       -ms-animation: up 10000ms linear infinite alternate;
-      animation: up 10000ms linear infinite alternate
+      animation: up 10000ms linear infinite alternate;
   }
   #shadowweight {
       width: 10px;
@@ -381,7 +383,7 @@ body {
       -webkit-animation: up 10000ms linear infinite alternate;
       -moz-animation: up 10000ms linear infinite alternate;
       -ms-animation: up 10000ms linear infinite alternate;
-      animation: up 10000ms linear infinite alternate
+      animation: up 10000ms linear infinite alternate;
   }
   #chain-circle {
       background: url(https://i.imgur.com/4b6jjmK.png) no-repeat -371px -706px;
@@ -393,7 +395,7 @@ body {
       -webkit-animation: rotate 10000ms linear infinite alternate;
       -moz-animation: rotate 10000ms linear infinite alternate;
       -ms-animation: rotate 10000ms linear infinite alternate;
-      animation: rotate 10000ms linear infinite alternate
+      animation: rotate 10000ms linear infinite alternate;
   }
   #chain {
       width: 1px;
@@ -406,7 +408,7 @@ body {
       -webkit-animation: collapse 10000ms linear infinite alternate;
       -moz-animation: collapse 10000ms linear infinite alternate;
       -ms-animation: collapse 10000ms linear infinite alternate;
-      animation: collapse 10000ms linear infinite alternate
+      animation: collapse 10000ms linear infinite alternate;
   }
   @keyframes "rotate" {
       from {
@@ -414,54 +416,54 @@ body {
           -moz-transform: rotate(0);
           -o-transform: rotate(0);
           -ms-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -webkit-transform: rotate(360deg);
           -moz-transform: rotate(360deg);
           -o-transform: rotate(360deg);
           -ms-transform: rotate(360deg);
-          transform: rotate(360deg)
+          transform: rotate(360deg);
       }
   }
   @-moz-keyframes rotate {
       from {
           -moz-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -moz-transform: rotate(360deg);
-          transform: rotate(360deg)
+          transform: rotate(360deg);
       }
   }
   @-webkit-keyframes "rotate" {
       from {
           -webkit-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -webkit-transform: rotate(360deg);
-          transform: rotate(360deg)
+          transform: rotate(360deg);
       }
   }
   @-ms-keyframes "rotate" {
       from {
           -ms-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -ms-transform: rotate(360deg);
-          transform: rotate(360deg)
+          transform: rotate(360deg);
       }
   }
   @-o-keyframes "rotate" {
       from {
           -o-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -o-transform: rotate(360deg);
-          transform: rotate(360deg)
+          transform: rotate(360deg);
       }
   }
   @keyframes "rotate-back" {
@@ -470,133 +472,133 @@ body {
           -moz-transform: rotate(0);
           -o-transform: rotate(0);
           -ms-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -webkit-transform: rotate(-360deg);
           -moz-transform: rotate(-360deg);
           -o-transform: rotate(-360deg);
           -ms-transform: rotate(-360deg);
-          transform: rotate(-360deg)
+          transform: rotate(-360deg);
       }
   }
   @-moz-keyframes rotate-back {
       from {
           -moz-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -moz-transform: rotate(-360deg);
-          transform: rotate(-360deg)
+          transform: rotate(-360deg);
       }
   }
   @-webkit-keyframes "rotate-back" {
       from {
           -webkit-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg)
+          transform: rotate(-360deg);
       }
   }
   @-ms-keyframes "rotate-back" {
       from {
           -ms-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -ms-transform: rotate(-360deg);
-          transform: rotate(-360deg)
+          transform: rotate(-360deg);
       }
   }
   @-o-keyframes "rotate-back" {
       from {
           -o-transform: rotate(0);
-          transform: rotate(0)
+          transform: rotate(0);
       }
       to {
           -o-transform: rotate(-360deg);
-          transform: rotate(-360deg)
+          transform: rotate(-360deg);
       }
   }
   @keyframes "up" {
       from {
-          bottom: 0
+          bottom: 0;
       }
       to {
-          bottom: 340px
+          bottom: 340px;
       }
   }
   @-moz-keyframes up {
       from {
-          bottom: 0
+          bottom: 0;
       }
       to {
-          bottom: 340px
+          bottom: 340px;
       }
   }
   @-webkit-keyframes "up" {
       from {
-          bottom: 0
+          bottom: 0;
       }
       to {
-          bottom: 340px
+          bottom: 340px;
       }
   }
   @-ms-keyframes "up" {
       from {
-          bottom: 0
+          bottom: 0;
       }
       to {
-          bottom: 340px
+          bottom: 340px;
       }
   }
   @-o-keyframes "up" {
       from {
-          bottom: 0
+          bottom: 0;
       }
       to {
-          bottom: 340px
+          bottom: 340px;
       }
   }
   @keyframes "collapse" {
       from {
-          height: 387px
+          height: 387px;
       }
       to {
-          height: 48px
+          height: 48px;
       }
   }
   @-moz-keyframes collapse {
       from {
-          height: 387px
+          height: 387px;
       }
       to {
-          height: 48px
+          height: 48px;
       }
   }
   @-webkit-keyframes "collapse" {
       from {
-          height: 387px
+          height: 387px;
       }
       to {
-          height: 48px
+          height: 48px;
       }
   }
   @-ms-keyframes "collapse" {
       from {
-          height: 387px
+          height: 387px;
       }
       to {
-          height: 48px
+          height: 48px;
       }
   }
   @-o-keyframes "collapse" {
       from {
-          height: 387px
+          height: 387px;
       }
       to {
-          height: 48px
+          height: 48px;
       }
   }
