@@ -8,8 +8,8 @@ function dF(s){var s1=unescape(s.substr(0,s.length-1)); var t='';for(i=0;i<s1.le
         c.width = window.innerWidth;
         //chinese characters - taken from the unicode charset
 
-        var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
-
+        //var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+        var matrix = "01";
         //converting the string into an array of single characters
         matrix = matrix.split("");
         var font_size = 10;
