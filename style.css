@@ -1,3 +1,7 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansegyptianhieroglyphs.css);
+* {
+      font-family: 'Noto Sans Egyptian Hieroglyphs', sans-serif;     
+}
 body {
       margin: 0;
       width: 100%;
@@ -603,8 +607,3 @@ body {
           height: 48px;
       }
   }
-
-@font-face {
-    font-family: OldEgyptGlyphs;
-    src: url(OldEgyptGlyphs.ttf);
-}
