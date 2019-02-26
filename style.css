@@ -1,24 +1,28 @@
 /*
  * Noto Sans Egyptian Hieroglyphs (Egyptian Hieroglyphs) http://www.google.com/fonts/earlyaccess
  */
-@import url(//fonts.googleapis.com/earlyaccess/notosansegyptianhieroglyphs.css);
+@import
+	url(//fonts.googleapis.com/earlyaccess/notosansegyptianhieroglyphs.css)
+	;
+
 #c {
-      font-family: 'Noto Sans Egyptian Hieroglyphs', sans-serif;
-	  opacity: 0.5;
-	  width: 100%;
+	font-family: 'Noto Sans Egyptian Hieroglyphs', sans-serif;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 2000;
+	position: absolute;
 }
 
 #v_effect_background {
-	opacity: 0.8
+	opacity: 0.7;
+	z-index: 1000;
 }
 
 body {
-      margin: 0;
-      width: 100%;
-      padding: 0;
-      overflow: hidden;
-      background: #000;
-      height: 100%
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	background: #000;
+	height: 100%
 }
-
-
