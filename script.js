@@ -53,8 +53,10 @@ var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
                 drops[i]++;
             }
         }
-        setInterval(draw, 10);
+        setInterval(draw, 60);
+        /*
         window.onload = function() {
             var backgroundAudio=document.getElementById("audio");
             backgroundAudio.volume = 0.1;
         }
+        */
