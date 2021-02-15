@@ -32,7 +32,11 @@ var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
             //translucent BG to show trail
             ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
             ctx.fillRect(0, 0, c.width, c.height);
-            ctx.fillStyle = "#0F0"; //green text
+
+        // Rainbow
+            ctx.fillStyle = (function(m,s,c){return (c ? arguments.callee(m,s,c-1) : '#') + s[m.floor(m.random() * s.length)]})(Math,'0123456789ABCDEF',5);
+
+            //ctx.fillStyle = "#0F0"; //green text
             ctx.font = font_size + "px arial";
             //looping over drops
             for(var i = 0; i < drops.length; i++)
@@ -49,4 +53,8 @@ var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
                 drops[i]++;
             }
         }
-        setInterval(draw, 35);
+        setInterval(draw, 100);
+        window.onload = function() {
+            var backgroundAudio=document.getElementById("audio");
+            backgroundAudio.volume = 0.1;
+        }
