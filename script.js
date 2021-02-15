@@ -53,7 +53,7 @@ var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
                 drops[i]++;
             }
         }
-        setInterval(draw, 100);
+        setInterval(draw, 10);
         window.onload = function() {
             var backgroundAudio=document.getElementById("audio");
             backgroundAudio.volume = 0.1;
