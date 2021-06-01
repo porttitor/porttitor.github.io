@@ -54,9 +54,9 @@ var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
             }
         }
         setInterval(draw, 35);
-        /*
+        
         window.onload = function() {
             var backgroundAudio=document.getElementById("audio");
             backgroundAudio.volume = 0.1;
         }
-        */
+        
