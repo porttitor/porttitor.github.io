@@ -31,8 +31,3 @@ function draw()
     }
 }
 setInterval(draw, 30);
-
-window.onload = function() {
-    var backgroundAudio=document.getElementById("audio");
-    backgroundAudio.volume = 0.1;
-}
