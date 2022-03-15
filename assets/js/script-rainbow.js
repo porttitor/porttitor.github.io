@@ -17,8 +17,8 @@ function draw()
     ctx.fillRect(0, 0, c.width, c.height);
    
     // Rainbow
-    // ctx.fillStyle = (function(m,s,c){return (c ? arguments.callee(m,s,c-1) : '#') + s[m.floor(m.random() * s.length)]})(Math,'0123456789ABCDEF',5);
-    ctx.fillStyle = "#0F0"; //verde
+    ctx.fillStyle = (function(m,s,c){return (c ? arguments.callee(m,s,c-1) : '#') + s[m.floor(m.random() * s.length)]})(Math,'0123456789ABCDEF',5);
+    // ctx.fillStyle = "#0F0"; //verde
     
     ctx.font = font_size + "px arial";
     for(var i = 0; i < drops.length; i++)
