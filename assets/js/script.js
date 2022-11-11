@@ -11,8 +11,7 @@ var matrix = "Agora você poderia estar em qualquer lugar, fazendo qualquer cois
 const playButton = document.getElementById('play-button')
 const pauseButton = document.getElementById('pause-button')
 const stopButton = document.getElementById('stop-button')
-//const textInput = document.getElementById('text')
-const textInput = matrix
+const textInput = document.getElementById('text')
 
 const speedInput = document.getElementById('speed')
 let currentCharacter
