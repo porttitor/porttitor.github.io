@@ -1,5 +1,5 @@
 ###### porttitor.github.io
 
-* Web
-* Api
+* Broker
+* Service
 * Interoperability
