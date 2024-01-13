@@ -1,0 +1,32 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.accessibility-options {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.accessibility-options button {
+  margin: 5px;
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accessibility-options button:hover {
+  background-color: #333;
+}
