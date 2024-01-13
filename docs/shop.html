@@ -27,7 +27,7 @@
     }
 
     .produto {
-      width: calc(25% - 2em);
+      width: calc(50% - 2em);
       background-color: #fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin: 1em;
@@ -84,9 +84,27 @@
     }
 
     /* Media queries para responsividade */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       .produto {
         width: calc(100% - 2em);
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      .produto {
+        width: calc(50% - 2em);
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .produto {
+        width: calc(33.33% - 2em);
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      .produto {
+        width: calc(25% - 2em);
       }
     }
   </style>
@@ -101,6 +119,7 @@
 
   <!-- Produtos em Destaque -->
   <section id="produtos-destaque">
+    <!-- Adicione 10 produtos conforme necessário -->
     <article class="produto" role="article" aria-labelledby="produto1">
       <img src="caminho/para/imagem-produto1.jpg" alt="Produto 1">
       <h2 id="produto1">Produto 1</h2>
@@ -108,6 +127,8 @@
       <p class="preco">R$ 99,99</p>
       <button aria-label="Adicionar Produto 1 ao Carrinho">Adicionar ao Carrinho</button>
     </article>
+
+    <!-- Adicione mais produtos conforme necessário -->
 
     <article class="produto" role="article" aria-labelledby="produto2">
       <img src="caminho/para/imagem-produto2.jpg" alt="Produto 2">
@@ -133,25 +154,79 @@
       <button aria-label="Adicionar Produto 4 ao Carrinho">Adicionar ao Carrinho</button>
     </article>
 
-    <!-- Adicione mais produtos conforme necessário -->
+    <article class="produto" role="article" aria-labelledby="produto5">
+      <img src="caminho/para/imagem-produto5.jpg" alt="Produto 5">
+      <h2 id="produto5">Produto 5</h2>
+      <p>Descrição curta do produto 5.</p>
+      <p class="preco">R$ 109,99</p>
+      <button aria-label="Adicionar Produto 5 ao Carrinho">Adicionar ao Carrinho</button>
+    </article>
+
+    <article class="produto" role="article" aria-labelledby="produto6">
+      <img src="caminho/para/imagem-produto6.jpg" alt="Produto 6">
+      <h2 id="produto6">Produto 6</h2>
+      <p>Descrição curta do produto 6.</p>
+      <p class="preco">R$ 69,99</p>
+      <button aria-label="Adicionar Produto 6 ao Carrinho">Adicionar ao Carrinho</button>
+    </article>
+
+    <article class="produto" role="article" aria-labelledby="produto7">
+      <img src="caminho/para/imagem-produto7.jpg" alt="Produto 7">
+      <h2 id="produto7">Produto 7</h2>
+      <p>Descrição curta do produto 7.</p>
+      <p class="preco">R$ 119,99</p>
+      <button aria-label="Adicionar Produto 7 ao Carrinho">Adicionar ao Carrinho</button>
+    </article>
+
+    <article class="produto" role="article" aria-labelledby="produto8">
+      <img src="caminho/para/imagem-produto8.jpg" alt="Produto 8">
+      <h2 id="produto8">Produto 8</h2>
+      <p>Descrição curta do produto 8.</p>
+      <p class="preco">R$ 79,99</p>
+      <button aria-label="Adicionar Produto 8 ao Carrinho">Adicionar ao Carrinho</button>
+    </article>
+
+    <article class="produto" role="article" aria-labelledby="produto9">
+      <img src="caminho/para/imagem-produto9.jpg" alt="Produto 9">
+      <h2 id="produto9">Produto 9</h2>
+      <p>Descrição curta do produto 9.</p>
+      <p class="preco">R$ 99,99</p>
+      <button aria-label="Adicionar Produto 9 ao Carrinho">Adicionar ao Carrinho</button>
+    </article>
+
+    <article class="produto" role="article" aria-labelledby="produto10">
+      <img src="caminho/para/imagem-produto10.jpg" alt="Produto 10">
+      <h2 id="produto10">Produto 10</h2>
+      <p>Descrição curta do produto 10.</p>
+      <p class="preco">R$ 129,99</p>
+      <button aria-label="Adicionar Produto 10 ao Carrinho">Adicionar ao Carrinho</button>
+    </article>
   </section>
 
   <!-- Rodapé da Loja -->
   <footer>
-    <p>Entre em contato: <a href="mailto:concealed.surprise.master.drop@gmail.com" aria-label="Enviar e-mail para contato">concealed.surprise.master.drop@gmail.com</a></p>
+    <p>Entre em contato: <a href="mailto:contato@minhalojadropshipping.com" aria-label="Enviar e-mail para contato">contato@minhalojadropshipping.com</a></p>
   </footer>
 
   <!-- Melhoria na acessibilidade com JavaScript -->
   <script>
-    // Adiciona a função de foco ao elemento clicado para melhorar a navegação do teclado
     const produtos = document.querySelectorAll('.produto');
 
-    produtos.forEach(produto => {
+    produtos.forEach((produto, index) => {
       produto.addEventListener('click', () => {
         produto.focus();
       });
+
+      produto.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          const nextIndex = (index + 1) % produtos.length;
+          produtos[nextIndex].focus();
+        } else if (e.key === 'ArrowLeft') {
+          const prevIndex = (index - 1 + produtos.length) % produtos.length;
+          produtos[prevIndex].focus();
+        }
+      });
     });
   </script>
-
 </body>
 </html>
