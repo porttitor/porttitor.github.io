@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 header {
@@ -18,6 +20,7 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 1.5em;
 }
 
 nav {
@@ -72,18 +75,18 @@ section {
 
 .produto h2 {
   color: #333;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 0.5em;
 }
 
 .produto p {
   color: #666;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .produto .preco {
   color: #e44d26;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 0.5em;
 }
 
