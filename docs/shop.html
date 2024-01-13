@@ -19,6 +19,28 @@
       padding: 1em 0;
     }
 
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1em;
+      margin: 0 1em;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #e44d26;
+    }
+
     section {
       display: flex;
       flex-wrap: wrap;
@@ -81,9 +103,6 @@
       padding: 1em 0;
       background-color: #333;
       color: #fff;
-      position: relative;
-      bottom: 0;
-      width: 100%;
     }
 
     .informacoes-empresa {
@@ -140,6 +159,14 @@
     <h1>Minha Loja Dropshipping</h1>
     <p>Sua loja online para produtos incríveis!</p>
   </header>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="#produtos-destaque">Produtos</a>
+    <a href="#checkout">Checkout</a>
+    <a href="#contato">Contato</a>
+    <!-- Adicione mais links conforme necessário -->
+  </nav>
 
   <!-- Produtos em Destaque -->
   <section id="produtos-destaque">
@@ -225,6 +252,26 @@
       <p class="preco">R$ 129,99</p>
       <button aria-label="Adicionar Produto 10 ao Carrinho">Adicionar ao Carrinho</button>
     </article>
+  </section>
+
+  <!-- Processo de Checkout -->
+  <section id="checkout">
+    <!-- Adicione o formulário de checkout aqui -->
+    <h2>Checkout</h2>
+    <form>
+      <!-- Adicione os campos do formulário de checkout -->
+      <!-- Nome, endereço, informações de pagamento, etc. -->
+      <button type="submit">Finalizar Compra</button>
+    </form>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <!-- Adicione informações de contato aqui -->
+    <h2>Contato</h2>
+    <p>Entre em contato conosco para dúvidas ou suporte:</p>
+    <p>Email: contato@minhalojadropshipping.com</p>
+    <p>Telefone: (12) 3456-7890</p>
   </section>
 
   <!-- Rodapé da Loja -->
