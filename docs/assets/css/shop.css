@@ -1,0 +1,167 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #444;
+  padding: 0.5em 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5em 2em;
+}
+
+.produto {
+  width: calc(50% - 2em);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  padding: 1em;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.produto h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.produto p {
+  color: #666;
+  font-size: 1em;
+}
+
+.produto .preco {
+  color: #e44d26;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+button {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.informacoes-empresa {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.informacoes-empresa div {
+  flex: 1;
+  text-align: left;
+  padding: 1em;
+}
+
+.propaganda {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 480px) {
+  .produto {
+    width: calc(100% - 2em);
+  }
+
+  nav {
+    top: 50px;
+  }
+
+  .informacoes-empresa div {
+    flex: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .produto {
+    width: calc(50% - 2em);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .produto {
+    width: calc(33.33% - 2em);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .produto {
+    width: calc(25% - 2em);
+  }
+}
