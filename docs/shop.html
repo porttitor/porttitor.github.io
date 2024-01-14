@@ -11,12 +11,12 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background: linear-gradient(to right, #FF96F2, #F77AE1);
             color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #FF57AC;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -39,12 +39,13 @@
         }
 
         .product-card {
-            border: 1px solid #ddd;
+            border: 1px solid #FF96F2;
             border-radius: 8px;
             overflow: hidden;
             margin: 10px;
             width: 300px;
             transition: transform 0.3s ease-in-out;
+            background-color: #fff;
         }
 
         .product-card:hover {
@@ -59,18 +60,33 @@
         .product-card h2 {
             margin: 10px 0;
             font-size: 1.2em;
+            color: #FF57AC;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #FF57AC;
             color: #fff;
+        }
+
+        svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
         }
     </style>
 </head>
 
 <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#FF96F2" fill-opacity="1" d="M0,256L60,213.3C120,171,240,85,360,101.3C480,117,600,235,720,266.7C840,299,960,245,1080,202.7C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+    
     <header>
         <h1>Sua Loja de Dropshipping</h1>
         <p>Encontre os melhores produtos com os melhores preços!</p>
